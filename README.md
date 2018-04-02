@@ -103,19 +103,19 @@ sudo apt-get upgrade
 3. cd /var/www/FlaskApp
 4. vim  flaskapp.wsgi 
 
-###Add the following content 
-#!/usr/bin/python
+### Add the following content 
+- #!/usr/bin/python
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/FlaskApp")
 
 from FlaskApp import app as application
-#application.secret_key = 'Super secret key'
+- #application.secret_key = 'Super secret key'
 
 sudo service apache2 restart
 
-Access the application though : 52.66.122.118
+Access the application through : 52.66.122.118
 
 # License
 This is opensource and my own linux configuration . Email me if you you need any help in making your first amazon VM  revurikarna@gmail.com
